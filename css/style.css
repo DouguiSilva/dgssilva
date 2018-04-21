@@ -1,0 +1,396 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('font/AvenirLTStd-Medium.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avenir Book';
+    src: url('font/AvenirLTStd-Book.otf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('font/LobsterTwo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* PÁGINA SOBRE/INDEX */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    background-color: #fff;
+    background-size: cover;
+}
+
+footer {
+    position: fixed;
+    top: 90%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 9.8vh;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0 6.6vw;
+    box-sizing: border-box;
+}
+
+section.sec1 {
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    background: url('images/bg.jpg');
+    background-size: cover;
+}
+
+#copyright {
+    color: #FFF;
+    font-family: 'Avenir', sans-serif;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 9.8vh;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 7.6vw;
+    box-sizing: border-box;
+}
+
+nav.brand {
+    float: left;
+    height: 100%;
+    line-height: 70px;
+}
+
+#redes h4 {
+    line-height: 30px;
+    float: left;
+    padding: 0 20px;
+}
+
+#redes ul li a {
+    padding: .8vh 0 .8vh 2.5vw;
+    color: rgb(255, 255, 255);
+}
+
+#redes ul li a:hover {
+    color: #FF4B59;
+}
+
+.brand h2 {
+    float: left;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    line-height: 60px;
+    font-family: 'Lobster', sans-serif;
+}
+
+ul {
+    float: right;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    height: 70px;
+    font-family: 'Avenir', sans-serif;
+    line-height: 70px;
+    padding: 0 0 0 3vw;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+ul li a:hover {
+    color: #FF4B59;
+}
+
+h2:hover {
+    color: #FF4B59;
+}
+
+ul li a:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+
+/* PÁGINA SOBRE */
+
+.sobre1 {
+    color: #95989A;
+    padding: 25vh 7vw 10vw 7vw;
+    font-family: 'Avenir Book', sans-serif;
+}
+
+.sobre2 {
+    color: #95989A;
+    padding: 5vh 7vw 10vw 7vw;
+    font-family: 'Avenir Book', sans-serif;
+}
+
+.sobre3 {
+    color: #95989A;
+    padding: 5vh 7vw 10vw 7vw;
+    font-family: 'Avenir Book', sans-serif;
+}
+
+.sobre4 {
+    color: #95989A;
+    padding: 5vh 7vw 10vw 7vw;
+    font-family: 'Avenir Book', sans-serif;
+}
+
+.sobre1 h1,
+.sobre3 h1 {
+    font-size: 8vh;
+    font-family: 'Avenir', sans-serif;
+    color: #696A6A;
+}
+
+.sobre1 p,
+.sobre3 p {
+    font-size: 2.8vh;
+    padding: 10px 0vh 0px 0px;
+}
+
+.sobre1 p b,
+.sobre3 p b {
+    font-family: 'Avenir', sans-serif;
+    color: #696A6A;
+}
+
+.sobre2 h1,
+.sobre4 h1 {
+    font-size: 8vh;
+    font-family: 'Avenir', sans-serif;
+    color: #696A6A;
+}
+
+.sobre2 p,
+.sobre4 p {
+    font-size: 2.8vh;
+    padding: 10px 80vh 0px 0px;
+}
+
+.sobre2 p b,
+.sobre4 p b {
+    font-family: 'Avenir', sans-serif;
+    color: #696A6A;
+}
+
+#img-perfil {
+    float: left;
+    padding: 0px 100px 0px 0px;
+    height: 50vh;
+}
+
+#img-hobbies {
+    float: right;
+    padding: 0px 0px 100px 0px;
+    max-width: 100%;
+    height: 300px;
+}
+
+#img-skills {
+    float: left;
+    padding: 0px 100px 0px 0px;
+    max-width: 100%;
+    height: 300px;
+}
+
+#img-exp {
+    float: right;
+    padding: 0px 0px 100px 0px;
+    max-width: 100%;
+    height: 300px;
+}
+
+#redes2 {
+    position: absolute;
+    top: 90%;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 9.8vh;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 0 100px;
+    box-sizing: border-box;
+}
+
+
+/* PÁGINA CONTATO */
+
+.contato {
+    color: #95989A;
+    padding: 10vh 8vw 10vh 8vw;
+}
+
+.contato h1 {
+    float: left;
+    padding: 10vh 0vw 0vh 0vw;
+    font-size: 10vh;
+    font-family: 'Avenir', sans-serif;
+    color: #696A6A;
+}
+
+.contato p {
+    float: left;
+    padding: 0vh 51vw 0vh 0vw;
+    font-size: 2.8vh;
+    font-family: 'Avenir Book', sans-serif;
+}
+
+
+/* FORM */
+
+form {
+    /* float: right; */
+    padding: 0vh 0vw 0vh 44vw;
+}
+
+.group {
+    position: relative;
+    margin-bottom: 3em;
+}
+
+label {
+    color: #BFC1C3;
+    font-size: 15px;
+    font-weight: normal;
+    font-family: 'Avenir', sans-serif;
+    position: absolute;
+    pointer-events: none;
+    top: 10px;
+    transition: 0.2s ease all;
+}
+
+input {
+    color: #95989A;
+    font-size: 15px;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    outline: none;
+    border: none;
+    width: 40vw;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+textarea {
+    color: #95989A;
+    font-size: 15px;
+    padding: 10px 0px 10px 0px;
+    display: block;
+    outline: none;
+    border: none;
+    width: 40vw;
+    border-bottom: 1px solid #d2d2d2;
+}
+
+
+/* BARS - ANIMAÇÃO */
+
+.bar {
+    position: relative;
+    display: block;
+    width: auto;
+}
+
+.bar:before,
+.bar:after {
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: -1px;
+    position: absolute;
+    background: #FF4B59;
+    transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+
+/* INPUTS - VALIDAÇÃO */
+
+input:valid,
+textarea:valid {
+    border-bottom: 1px solid #4fc24f;
+}
+
+input:valid~.bar:before,
+input:valid~.bar:after,
+textarea:valid~.bar:before,
+textarea:valid~.bar:after {
+    background: #4fc24f !important;
+}
+
+input:focus~label,
+input.used~label,
+textarea:focus~label,
+textarea.use~label {
+    top: -20px;
+    font-size: 13px;
+    color: #FF4B59;
+}
+
+input:valid~label,
+input:valid.used~label,
+textarea:valid~label,
+textarea:valid.used~label {
+    color: #4fc24f;
+}
+
+input:focus~.bar:before,
+input:focus~.bar:after,
+textarea:focus~.bar:before,
+textarea:focus~.bar::after {
+    width: 50%;
+}
+
+#bt {
+    padding: 0 0 0 34vw;
+    border: none;
+    border-radius: 30px;
+    margin-right: 50px;
+    color: #BFC1C3;
+    font-weight: bold;
+}
+
+#bt:hover {
+    color: #FF4B59;
+}
