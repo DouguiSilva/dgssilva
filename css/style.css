@@ -208,26 +208,14 @@ ul li a:before {
     color: #696A6A;
 }
 
-#img-perfil {
+#img-perfil,
+#img-skills {
     float: left;
     padding: 0px 100px 0px 0px;
     height: 50vh;
 }
 
-#img-hobbies {
-    float: right;
-    padding: 0px 0px 100px 0px;
-    max-width: 100%;
-    height: 300px;
-}
-
-#img-skills {
-    float: left;
-    padding: 0px 100px 0px 0px;
-    max-width: 100%;
-    height: 300px;
-}
-
+#img-hobbies,
 #img-exp {
     float: right;
     padding: 0px 0px 100px 0px;
@@ -393,4 +381,30 @@ textarea:focus~.bar::after {
 
 #bt:hover {
     color: #FF4B59;
+}
+
+
+/* PORTFOLIO MENU-1*/
+
+section.sec-port {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+.sec-port ul li a {
+    position: relative;
+    display: block;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#btn-ilustra,
+#btn-design,
+#btn-modelagem {
+    height: auto;
+    width: 33.3vw;
+    padding: 9.7vh 0 0vh 0;
 }
