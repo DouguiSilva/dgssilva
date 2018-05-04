@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </head>
 
@@ -26,6 +27,7 @@
     </nav>
 
     <section class="sec-port-2">
+
         <p class="nav-breadcrumb">
             <a class="breadcrumb" href="port.html">
                 <h4>Portfólio</h4>
@@ -33,17 +35,209 @@
             <h4 class="arrow">></h4><br>
             <h1 class="label-port">Ilustrações</h1>
         </p>
+
         <div class="grid-container">
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>  
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>  
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>
-          <div class="grid-item"><img class="port-cell" src="css/images/sand.png" alt="Ilustrações"></div>  
+            <div class="grid-item"><img id="myImg" class="port-cell" src="css/images/i-sandshrew.jpg" alt="Sandshrew">
+                <figcaption>Sandshrew</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" class="img" id="img01">
+                    <div class="caption" id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-knight.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-alucard.jpg" alt="Ilustrações">
+                <figcaption>Alucard</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-goatking.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-pumpkinmon.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-krizalid.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-sherlock.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-captainamerica.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-ageofultron.png" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-motherofdragons.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-akuma.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
+            <div class="grid-item"><img class="port-cell" src="css/images/i-slifer.jpg" alt="Ilustrações">
+                <figcaption>Knight</figcaption>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
         </div>
+        <!-- 
+        <table>
+            <tr>
+                <td>
+                    <figure class="container-jobs">
+                        <img id="myImg" class="port-cell" src="css/images/ilustra-sand.png" alt="Sandshrew" />
+                        <figcaption>Sandshrew</figcaption>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </figure>
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img id="myImg2" class="port-cell" src="css/images/ilustra-knight.png" alt="Knight" />
+                        <figcaption>Knight</figcaption>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img02">
+                            <div id="caption"></div>
+                        </div>
+                    </figure>
+
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-dragons.png" alt="Dragons" />
+                        <figcaption>Dragons</figcaption>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img03">
+                            <div id="caption"></div>
+                        </div>
+                    </figure>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-pumpkinmon.png" alt="Pumpkinmon" />
+                        <figcaption>Pumpkinmon</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-ageofultron.png" alt="Age of Ultron" />
+                        <figcaption>Age of Ultron</figcaption>
+                    </figure>
+
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-motherofdragons.png" alt="Mother of Dragons" />
+                        <figcaption>Mother of Dragons</figcaption>
+                    </figure>
+
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-krizalid.png" alt="Krizalid" />
+                        <figcaption>Krizalid</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-sherlock.png" alt="Sherlock" />
+                        <figcaption>Sherlock</figcaption>
+                    </figure>
+
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-alucard.png" alt="Alucard" />
+                        <figcaption>Alucard</figcaption>
+                    </figure>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-slifer.png" alt="Slifer The Sky Dragon" />
+                        <figcaption>Slifer The Sky Dragon</figcaption>
+                    </figure>
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-akuma.png" alt="Akuma" />
+                        <figcaption>Akuma</figcaption>
+                    </figure>
+
+                </td>
+                <td>
+                    <figure class="container-jobs">
+                        <img class="port-cell" src="css/images/ilustra-captainamerica.png" alt="Captain America" />
+                        <figcaption>Captain America</figcaption>
+                    </figure>
+                </td>
+            </tr>
+        </table> -->
     </section>
 
     <footer id="footer-normal">

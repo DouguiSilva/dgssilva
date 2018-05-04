@@ -47,7 +47,7 @@ section.sec1 {
     width: 100%;
     height: 100vh;
     box-sizing: border-box;
-    background: url('images/bg.jpg');
+    background: url('images/bg-1.png');
     background-size: cover;
 }
 
@@ -65,6 +65,7 @@ nav {
     background: rgba(0, 0, 0, 0.5);
     padding: 0 7.6vw;
     box-sizing: border-box;
+    z-index: 10;
 }
 
 nav.brand {
@@ -238,24 +239,35 @@ ul li a:before {
 
 /* PÁGINA CONTATO */
 
-.contato {
+#contato {
+    position: relative;
     color: #95989A;
-    padding: 10vh 8vw 10vh 8vw;
+    margin: 50vh 50vw -30vh 8vw;
+    padding: 0;
 }
 
-.contato h1 {
+#contato h1 {
     float: left;
-    padding: 10vh 0vw 0vh 0vw;
+    margin: 0;
+    padding: 5vh 0vw 0vh 0vw;
     font-size: 10vh;
     font-family: 'Avenir', sans-serif;
+    /* background-color: #FF4B59; */
     color: #696A6A;
 }
 
-.contato p {
+#contato p {
     float: left;
-    padding: 0vh 51vw 0vh 0vw;
+    padding: 0vh 0vw 0vh 0vw;
     font-size: 2.8vh;
+    /* background-color: #FF4B59; */
     font-family: 'Avenir Book', sans-serif;
+}
+
+.contato {
+    position: relative;
+    color: #95989A;
+    padding: 34vh 8vw 13vh 8vw;
 }
 
 
@@ -263,7 +275,9 @@ ul li a:before {
 
 form {
     /* float: right; */
-    padding: 0vh 0vw 0vh 44vw;
+    margin: -25vh 0 0vh 44vw;
+    /* padding: 4vh 0vw 0vh 44vw; */
+    /* background-color: #4fc24f; */
 }
 
 .group {
@@ -296,12 +310,35 @@ input {
 textarea {
     color: #95989A;
     font-size: 15px;
-    padding: 10px 0px 10px 0px;
+    padding: 2vh 0 2vh 0;
     display: block;
     outline: none;
     border: none;
     width: 40vw;
     border-bottom: 1px solid #d2d2d2;
+}
+
+#bt {
+    position: relative;
+    float: right;
+    margin: 0vh 0 0 0vw;
+    padding: 1vh 0 1vh 0vw;
+    border: none;
+    width: 100px;
+    border-radius: 4px;
+    /* margin-right: 50px; */
+    /* background-color: rgba(0, 0, 0, 0.075); */
+    /* background-color: rgb(231, 231, 231); */
+    color: #FFF;
+    background-color: #95989A;
+    ;
+    /* font-family: 'Avenir', sans-serif; */
+    font-weight: bold;
+}
+
+#bt:hover {
+    color: #fff;
+    background-color: #FF4B59;
 }
 
 
@@ -370,33 +407,23 @@ textarea:focus~.bar::after {
     width: 50%;
 }
 
-#bt {
-    padding: 0 0 0 34vw;
-    border: none;
-    border-radius: 30px;
-    margin-right: 50px;
-    color: #BFC1C3;
-    font-weight: bold;
-}
-
-#bt:hover {
-    color: #FF4B59;
-}
-
 
 /* PORTFOLIO MENU-1*/
 
 section.sec-port {
-    width: 100vw;
-    height: 100vh;
+    /* width: 100vw;
+    height: 100vh; */
+    position: absolute;
+    margin: 9.8vh 0 0vh 0;
     padding: 0;
     box-sizing: border-box;
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 .sec-port ul li a {
     position: relative;
     display: block;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -404,21 +431,27 @@ section.sec-port {
 #btn-ilustra,
 #btn-design,
 #btn-modelagem {
+    /* float: left; */
     height: auto;
-    width: 33.3vw;
-    padding: 9.7vh 0 0 0;
+    width: 33.4vw;
+    /* width: 33.3vw; */
+    margin: 0;
+    padding: 0;
 }
 
 
-/* PORTFOLIO JOBS*/
+/* PORTFOLIO MENU-JOBS*/
 
 .sec-port-2 {
-    padding: 10vh 6vw 6vw 8vh;
+    position: static;
+    width: 84vw;
+    margin: 10vh 6vw 6vh 8vw;
+    padding: 0;
+    /* background-color: #4fc24f; */
 }
 
 .breadcrumb {
     float: left;
-    /* position: relative; */
     display: block;
     height: 70px;
     font-family: 'Avenir', sans-serif;
@@ -433,7 +466,6 @@ section.sec-port {
 
 .arrow {
     float: left;
-    /* position: relative; */
     display: block;
     height: 70px;
     font-family: 'Avenir', sans-serif;
@@ -451,7 +483,6 @@ section.sec-port {
 }
 
 .label-port {
-    /* float: left; */
     margin: 2vh 0 0 0;
     padding: 0vh 4vw;
     color: #696A6A;
@@ -459,43 +490,123 @@ section.sec-port {
     font-family: 'Avenir', sans-serif;
 }
 
-table {
-    position: relative;
+
+/* table {
+    position: static;
+    text-align: center;
     width: 0;
     border: 0;
     padding: 0;
     margin: 0vh 0vw 0vh 2vw;
-    /* background-color: #4fc24f; */
 }
 
+td {
+    position: relative;
+} */
+
+
+/* .port-cell {
+    position: relative;
+    text-align: center;
+    max-width: 340px;
+    max-height: 340px;
+    border-radius: 5%;
+    width: 100%;
+    height: 100%;
+} */
+
 .grid-container {
-  display: grid;
-  grid-gap: 50px 10px;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
+    display: grid;
+    margin: 8vh 0 0 0vw;
+    padding: 0;
+    grid-column-gap: 3vw;
+    grid-row-gap: 0;
+    /* grid-gap: 0vh 3vw; */
+    grid-template-columns: auto auto auto;
+    /* padding: 10px; */
+    /* margin: 10vh 0 2vh 4vw; */
+    /* background-color: #FF4B59; */
+}
+
+.grid-container:hover {
+    transition: .5s;
 }
 
 .grid-item {
-  width: 340px;
-  height: 340px; 
-  overflow: hidden;
-  border-radius: 20px;
+    width: 26vw;
+    height: 70%;
+    padding: 0;
+    /* width: 340px;
+    height: 340px; */
+    overflow: hidden;
+    border-radius: 15px;
 }
+
+.grid-item:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: .5s;
+}
+
+
+/* .grid-item:hover {
+    border-radius: 5%;
+    max-width: 340px;
+    max-height: 340px;
+    width: auto;
+    height: 50%;
+    padding: 0;
+    transition: .5s;
+} */
 
 .port-cell {
     text-align: center;
     width: 100%;
-}
-
-.port-cell:hover {
-
-}
-/*
-.port-cell::after {
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 0;
     margin: 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* .port-cell:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: .5s;
-}*/
+} */
+
+
+/* .container-jobs {
+    display: inline-block;
+    position: relative;
+    font-family: 'Avenir', sans-serif;
+    margin: 0vh 0vw 0vw 0vw;
+    padding: 4vh 2vw 4vh 2vw;
+    font-size: 4vh;
+} */
+
+figcaption {
+    position: absolute;
+    float: center;
+    top: 41vh;
+    text-align: center;
+    font-family: 'Avenir', sans-serif;
+    font-size: 4vh;
+    margin: 0vh 0 0 2vw;
+    padding: 5.2vh 2vw 4vh 1vw;
+    color: rgb(255, 0, 55);
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
+    /* background-color: #FF4B59; */
+}
+
+
+/* .container-jobs:hover {
+    border-radius: 5%;
+    max-width: 340px;
+    max-height: 340px;
+    width: auto;
+    height: 50%;
+    padding: 0;
+    transition: .5s;
+} */
 
 #footer-normal {
     position: relative;
@@ -509,6 +620,7 @@ table {
 }
 
 #copyright2 {
+    float: center;
     color: #FFF;
     font-family: 'Avenir', sans-serif;
     padding: 0 20px;
@@ -523,10 +635,121 @@ table {
 
 #footer-normal ul li a {
     padding: 3vh 1.5vw .8vw 2.5vh;
-    /* padding: 3vh 1.5vw .8vw 2vh; */
     color: rgb(255, 255, 255);
 }
 
 #footer-normal ul li a:hover {
     color: #FF4B59;
+}
+
+
+/* PORTFOLIO MODAL IMAGES */
+
+
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content (image) */
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+/* Caption of Modal Image */
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 5vh 0;
+    height: 150px;
+    font-family: 'Avenir', sans-serif;
+}
+
+
+/* Add Animation */
+
+.modal-content,
+#caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+
+/* The Close Button */
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* 100% Image Width on Smaller Screens */
+
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
 }
