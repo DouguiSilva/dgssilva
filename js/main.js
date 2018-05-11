@@ -1,18 +1,23 @@
 $(document).ready(function() {
 
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
     // Get the modal
 
 
     // Get the image and insert it inside the modal - use its "alt" text as a caption
     var modal = document.getElementById('myModal');
     var img = document.getElementById('myImg');
-    var modalImg = document.getElementById("img01");
+    var modalImg = document.getElementById("img01").src = "css/images/i-sandshrew.png";
     var captionText = document.getElementById("caption");
 
-    // var modal = document.getElementsByClassName('modal');
-    // var img = document.getElementsByClassName('port-cell');
-    // var modalImg = document.getElementsByClassName("img");
-    // var captionText = document.getElementsByClassName("caption");
     img.onclick = function() {
         modal.style.display = "block";
         modalImg.src = this.src;
