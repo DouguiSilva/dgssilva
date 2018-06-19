@@ -1,26 +1,65 @@
 $(document).ready(function() {
 
-    // Get the modal
+    //EFEITO DE HOVER NA PÁGINA PORTFÓLIO(ILLUSTRAÇÕES/ DESING/ E MODELAGEM 3D)
+
+    $(".grid-item-port").hover(function() {
+        $(this).animate({ opacity: 0.2 });
+    }, function() {
+        $(this).animate({ opacity: 1 });;
+    });
+
+    //EFEITO DE SCROLL NA PÁGINA SOBRE
+
+    // Debounce do Lodash
+    debounce = function(func, wait, immediate) {
+        var timeout;
+        return function() {
+            var context = this,
+                args = arguments;
+            var later = function() {
+                timeout = null;
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
 
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    // var modal = document.getElementById('myModal');
-    // var img = document.getElementById('myImg');
-    // var modalImg = document.getElementById("img01").src = "css/images/i-sandshrew.png";
-    // var captionText = document.getElementById("caption");
+    (function() {
+        var $target = $(".anime"),
+            animationClass = "anime-start",
+            offset = $(window).height() * 3 / 4;
 
-    // img.onclick = function() {
-    //     modal.style.display = "block";
-    //     modalImg.src = this.src;
-    //     captionText.innerHTML = this.alt;
-    // }
+        function animeScroll() {
+            var documentTop = $(document).scrollTop();
 
-    // Get the <span> element that closes the modal
-    // var span = document.getElementsByClassName("close")[0];
+            $target.each(function() {
+                var itemTop = $(this).offset().top;
+                if (documentTop > itemTop - offset) {
+                    $(this).addClass(animationClass);
+                } else {
+                    $(this).removeClass(animationClass);
+                }
+            });
+        }
 
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-        modal.style.display = "none";
-    }
+        animeScroll();
+
+        $(document).scroll(debounce(function() {
+            animeScroll();
+        }, 200));
+    })();
+
+
+    //EFEITO DE ALERT NA PÁGINA CONTATO
+
+    $("#bt").on("click", function() {
+        alert("Infelizmente essa função ainda não está implementada ヽ(ヅ)ノ");
+    });
+
+
 
 });

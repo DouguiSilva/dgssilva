@@ -105,6 +105,7 @@ ul li {
 ul li a {
     position: relative;
     display: inline;
+    /* height: 70px; */
     font-family: 'Avenir', sans-serif;
     line-height: 70px;
     padding: 0 0 0 3vw;
@@ -137,7 +138,7 @@ ul li a:before {
 }
 
 
-/* SLIDER */
+/* SLIDER/BANNER */
 
 .slider {
     width: 100%;
@@ -164,15 +165,19 @@ ul li a:before {
 
 .slider label {
     position: absolute;
-    background-color: rgb(123, 11, 138);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
     margin: 80vh 45vw 5vh 45vw;
     cursor: pointer;
     display: block;
     height: 2vh;
-    width: auto;
+    width: 15px;
     position: absolute;
-    width: 10px;
     z-index: 10;
+}
+
+#slide1:hover {
+    color: #FF4B59;
 }
 
 .slider li:nth-child(1) label {
@@ -196,6 +201,10 @@ ul li a:before {
     opacity: 1;
     visibility: visible;
     z-index: 10;
+}
+
+.text-banner {
+    float: left;
 }
 
 
@@ -231,6 +240,7 @@ ul li a:before {
 
 .sobre1 h1,
 .sobre3 h1 {
+    /* font-size: 3rem; */
     font-size: 2rem;
     font-family: 'Avenir', sans-serif;
     color: #696A6A;
@@ -278,6 +288,7 @@ ul li a:before {
 #img-exp {
     float: right;
     padding: 0 0 5vh 10vw;
+    /* max-width: 100%; */
     width: 25vw;
 }
 
@@ -291,6 +302,20 @@ ul li a:before {
     background: rgba(0, 0, 0, 0.4);
     padding: 0 100px;
     box-sizing: border-box;
+}
+
+
+/* ANIMAÇÃO DAS SEÇÕES */
+
+.anime {
+    opacity: 0;
+    transform: translate3d(-100px, 0, 0);
+    transition: .3s;
+}
+
+.anime-start {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
 }
 
 
@@ -331,10 +356,7 @@ ul li a:before {
 /* FORM */
 
 form {
-    /* float: right; */
     margin: -25vh 0 0vh 44vw;
-    /* padding: 4vh 0vw 0vh 44vw; */
-    /* background-color: #4fc24f; */
 }
 
 .group {
@@ -460,7 +482,7 @@ textarea:focus~.bar::after {
 }
 
 
-/* PORTFOLIO MENU-1*/
+/* PORTFOLIO MENU ESCOLHA(ILUSTRACOES/DESIGN/MODELAGEM3D)*/
 
 .grid-container-port {
     height: 80.2vh;
@@ -487,13 +509,13 @@ textarea:focus~.bar::after {
     margin: 0;
 }
 
-.grid-item-port:hover {
-    background-color: #FF4B59;
 
-}
+/* .grid-item-port:hover {
+    opacity: 0.3;
+} */
 
 
-/* PORTFOLIO MENU-JOBS*/
+/* PORTFOLIO MENU DE TRABALHOS*/
 
 .sec-port-2 {
     position: static;
@@ -597,12 +619,12 @@ figcaption {
     width: auto;
     height: 4.8vh;
     background: rgba(0, 0, 0, 0.4);
-    padding: 0vh 6.6vw 6.6vw 0;
+    padding: 3vh 6.6vw 6.6vw 0;
     box-sizing: border-box;
 }
 
 #copyright2 {
-    float: center;
+    float: left;
     color: #FFF;
     font-family: 'Avenir', sans-serif;
     padding: 0 20px;
@@ -741,7 +763,6 @@ figcaption {
 
 @media screen and (max-width: 600px) {
     nav li {
-        /* margin: 10px -20px; */
         width: 120px;
         border-bottom: none;
         height: 10px;
@@ -758,7 +779,6 @@ figcaption {
         height: 30px;
         line-height: 60px;
         font-size: 1em;
-        /* display: block; */
         color: #ffffff;
         margin-right: -8px;
     }
